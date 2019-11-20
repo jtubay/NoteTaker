@@ -10,4 +10,6 @@ https://github.com/jtubay/NoteTaker.git
 
 
 ### Screenshots:
+![Screen Shot 2019-11-20 at 6 02 32 PM](https://user-images.githubusercontent.com/54481806/69286007-3213b480-0bc0-11ea-9e50-0b222df8e7dd.png)
+
 
