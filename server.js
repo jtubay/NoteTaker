@@ -1,3 +1,4 @@
+//requiring 
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
@@ -7,9 +8,10 @@ const PORT = process.env.PORT || 4000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-//const notes = [{}];
 app.use(express.static("public"))
 
+
+//routes
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/public/index.html"));
 });
@@ -22,6 +24,7 @@ app.get("/api/notes", (req, res) => {
   return res.json(notes);
 });
 
+//post
 app.post("/api/notes", (req, res) => {
   const newNote = req.body;
   newNote.id = parseInt(notes[notes.length -1].id) +1
@@ -34,6 +37,7 @@ app.post("/api/notes", (req, res) => {
   res.json(newNote);
 });
 
+//delete
 app.delete("/api/notes/:id", (req, res)=>{
     const id = req.params.id
     console.log(id)
