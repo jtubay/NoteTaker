@@ -1,0 +1,25 @@
+{
+  "name": "NoteTaker",
+  "version": "1.0.0",
+  "description": "### Description: Created backend code to store notes to a local server. Using pre created fron end, the back end code allows the user to store a note along with a note title and gives each note a specific id. The id is used to delete the note.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtubay/NoteTaker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtubay/NoteTaker/issues"
+  },
+  "homepage": "https://github.com/jtubay/NoteTaker#readme"
+}
